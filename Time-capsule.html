@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Time capsule</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    
+    *{
+    box-sizing: border-box;
+    }
+    
+    .row::after {
+    content:"";
+    clear: both;
+    display: table;
+    }
+    
+    [class*="col-"] {
+    float: left;   
+   }
+
+    .row{
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .thumbnail{
+    min-height: 180px;
+    margin-bottom: 10px; 
+    border: 0;
+    height: 100%;
+    }
+
+    .photo .panel-body .row .thumbnail{
+    box-shadow: none;
+    }
+    
+    .name{
+    background-color:turquoise;
+    padding-top:20px;
+    text-align: center;
+    }
+    
+    .message{
+    padding-bottom: 20px
+    }
+    
+    .list{
+    list-style-type: none;
+    }
+    
+    .panel{
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 400px
+    }
+    
+    .panel-heading{
+    padding-left: 35px;
+    }
+    
+    .photo .panel-heading{
+    background-color: coral;
+    }
+    
+    .music .panel-heading{
+    background-color: cornflowerblue;
+    border: 0;
+    padding-left: 30px;
+    }
+    
+    .music{
+    background-color: cornflowerblue;
+
+    }
+    
+    .card{
+    position: relative;
+    text-align: center;
+    padding-top:5px;
+    }
+    
+    .rate{
+    background-color: coral;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:white;
+    }
+    
+    .rate .panel-heading{
+    padding-left:2px;
+    }
+    
+    .progress-bar{
+    background-color: dimgrey;
+    }
+    
+    .books{
+    background-color: turquoise;
+    
+    }
+    
+    .book1{
+    text-align: center;
+    padding-top: 10px;
+    
+    }
+    
+</style>
+<body>
+
+<nav class="navbar navbar-default">
+   <div class="container-fluid">       
+      <div class="navbar-header">           
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-id" aria-expanded="false">
+                <span class="icon-bar"></span>                
+                <span class="icon-bar"></span>                
+                <span class="icon-bar"></span>           
+         </button>      
+         <a class="navbar-brand" href="#">Sunny Cheng</a>        
+      </div>       
+      <div class="collapse navbar-collapse" id="menu-id">           
+         <ul class="nav navbar-nav">        
+           <li ><a href="file:///Users/sunnycheng/Desktop/Web%20design%20class/sc10hc.github.io/index.html">Resume</a></li>               
+           <li class="active"><a href="#">Time capsule</a></li>            
+         </ul>      
+      </div> 
+    </div>
+</nav>
+
+<!--Top two thumbnails-->
+
+<div class="row">
+  <div class="col-sm-6 col-md-6 col-xs-12">
+    <div class="thumbnail name">
+      <img src="http://a1.dspncdn.com/media/692x/00/df/70/00df7073b5777406cd92eb9f786f888d.jpg" class="img-circle" alt="" width="100px">
+      
+      <div class="caption">
+        <h3>From 2017</h3>
+         <p>To be unlocked 1 year later</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-6 col-xs-12">
+    <div class="message">
+      <div class="caption">
+       <h4><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp; Message from the past<br><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></h4>
+          <p>Dear myself,<br>I really hope you have your shit together by now. Among the many crisises resulted by Donald Trump's presidency, my "quarterly-life crisis" is perhaps a small one. Still, I hope you made the best of it. As long as you remain anti-Trump, you are good to go.</p>
+       </div>
+     </div>
+  </div>
+</div>
+    
+<!--Photos panel-->
+
+  <div class="panel panel-default photo">
+   <div class="panel-heading"><h3><span style="color:white">Photos</span></h3></div>
+   <div class="panel-body">
+     <div class="row">
+       <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="thumbnail">
+          <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/01.jpg" alt="...">
+         </div>
+       </div>
+       
+       <div class="col-xs-12 col-sm-4 col-md-4"> 
+         <div class="thumbnail">
+          <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/02.jpg" alt="...">
+       </div>
+         </div>
+       
+       <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="thumbnail">
+          <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/03.jpg" alt="...">
+        </div>
+       </div>
+       
+      <div class="row">
+       <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="thumbnail">
+          <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/04.jpg" alt="...">
+         </div>
+       </div>
+       
+       <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="thumbnail">
+          <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/05.jpg" alt="...">
+         </div>
+       </div>
+       
+       <div class="col-xs-12 col-sm-4 col-md-4">
+         <div class="thumbnail">
+          <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/06.jpg" alt="...">
+         </div>
+       </div>
+       </div>
+      </div>
+    </div>
+    </div>
+     
+<!--Music panel-->
+
+  <div class="panel panel-default music">
+   <div class="panel-heading"><span style="color:white"><h3>Music</h3></span></div>
+   <div class="panel-body">
+   
+ <div class="row">
+   <div class="col-sm-3 col-md-3 col-xs-6">
+     <div class="thumbnail card">
+       <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/M-01.jpg" alt="...">
+       <div class="caption">
+         <h4>7 Years</h4>
+         <p>Lukas Graham</p>
+         <p><a href="https://www.youtube.com/watch?v=jErJimwom94&list=PLw9JRccvac9R8HtERS19D3UQuZXY2bj4C&index=11" class="btn btn-default" role="button">Music video</a></p>
+       </div>
+     </div>
+   </div>
+   
+      <div class="col-sm-3 col-md-3 col-xs-6">
+     <div class="thumbnail card">
+       <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/M-02.jpg" alt="...">
+       <div class="caption">
+         <h4>The Greatest</h4>
+         <p>Sia</p>
+         <p><a href="https://www.youtube.com/watch?v=GKSRyLdjsPA" class="btn btn-default" role="button">Music video</a></p>
+       </div>
+     </div>
+   </div>
+   
+      <div class="col-sm-3 col-md-3 col-xs-6">
+     <div class="thumbnail card">
+       <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/M-03.jpg" alt="...">
+       <div class="caption">
+         <h4>Complex</h4>
+         <p>Zion.T (feat.G-Dragon)</p>
+         <p><a href="https://www.youtube.com/watch?v=MGWvvdsEygQ&list=PLw9JRccvac9SW-JyZfOSvVo8i_29PLq5x&index=12" class="btn btn-default" role="button">Music video</a></p>
+       </div>
+     </div>
+   </div>
+   
+      <div class="col-sm-3 col-md-3 col-xs-6">
+     <div class="thumbnail card">
+       <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/M-04.jpg" alt="...">
+       <div class="caption">
+         <h4>ワタリドリ</h4>
+         <p>Alexandros</p>
+         <p><a href="https://www.youtube.com/watch?v=O_DLtVuiqhI&index=14&list=PLw9JRccvac9SW-JyZfOSvVo8i_29PLq5x" class="btn btn-default" role="button">Music video</a></p>
+       </div>
+     </div>
+   </div>
+  </div>
+  
+ </div>
+</div>
+
+<!--Bottom two thumbnails-->
+
+<div class="row">
+  <div class="col-sm-6 col-md-6 col-xs-12">
+    <div class="thumbnail rate">
+    <div class="panel-heading"><span style="color:white"><h3>Rating</h3></span></div>
+    
+    <h5>Pros</h5>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+      <span class="sr-only">70% Complete (success)</span>
+      </div>
+    </div>
+        <p>Came back to Taiwan/Family/Awesome foods/Year of learning/New friends/Travel/No work/Creative freedom</p>
+    
+    <br><h5>Cons</h5>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+      <span class="sr-only">40% Complete (success)</span>
+      </div>
+    </div>
+        <p>Donald Trump/Japan's nuclear pollution/smog/Taiwan's summer</p>
+        
+    </div>
+  </div>
+  
+  <div class="col-sm-6 co-md-6 col-xs-12">
+    <div class="thumbnail books">
+       <div class="panel-heading"><span style="color:white"><h3>Books</h3></span></div>
+       <div class="row">
+         <div class="col-sm-6 col-md-6 col-xs-12">
+           <div class="thumbnail book1">
+             <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/Q-01.jpg" class="img-circle" alt="" width="100px">
+             <div class="caption">
+               <h5>The Circle</h5>
+               <p>By Dave Eggers<br><span style="color:grey">*Mystery*</span></p>
+             </div>
+            </div>
+         </div>
+         
+         <div class="col-sm-6 col-md-6 col-xs-12">
+           <div class="thumbnail book1">
+             <img src="file:///Users/sunnycheng/Desktop/Web%20design%20class/Time%20capsule/Q-02.jpg" class="img-circle" alt="" width="100px">
+             <div class="caption">
+               <h5>狂風吹拂</h5>
+               <p>By 三浦紫苑<br><span style="color:grey">*Comedy/fiction*</span></p>
+             </div>
+            </div>
+         </div>
+         
+       </div>
+     </div>
+  </div>    
+</div>
+ 
+   
+</body>
+</html>
